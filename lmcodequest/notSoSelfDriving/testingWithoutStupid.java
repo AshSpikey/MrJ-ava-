@@ -1,15 +1,14 @@
-// Look on replit for info regarding the buffered reader
-import java.util.Scanner;
-public class Main{
+import java.util.*;
+public class testingWithoutStupid {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int testCases = Integer.parseInt(sc.nextLine());
-
-        for (int loopVal = 0; loopVal < testCases; loopVal++ ){
-
-            String currentLine = sc.nextLine();
-
-            
+        List <String> list = new ArrayList<String>();
+        list.add("23.15:98.34");
+        list.add("2.40:17.33");
+        list.add("6.79:5.01");
+        list.add("0.00:1.53");
+        list.add("113.56:113.56");
+            for(int index = 0; index < 5; index++){
+            String currentLine = list.get(index);
 
 
             String colon = ":";
@@ -24,7 +23,7 @@ public class Main{
 
             Float distanceOverSpeed = (distanceFloat/speedFloat);
 
-            
+            System.out.println(distanceOverSpeed);
             if (distanceOverSpeed <= 1.0){
                 System.out.println("SWERVE");
             }
@@ -34,6 +33,7 @@ public class Main{
             else{
                 System.out.println("SAFE");
             }
+    
         }
     }
 }
