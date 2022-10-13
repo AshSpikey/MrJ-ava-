@@ -8,6 +8,10 @@ public class Main{
         for (int loopVal = 0; loopVal < testCases; loopVal++ ){
 
             String currentLine = sc.nextLine();
+
+            
+
+
             String colon = ":";
             int indexOfColon = currentLine.indexOf(colon); // This should return the index of where the colon is located
 
@@ -15,7 +19,10 @@ public class Main{
             String speed = currentLine.substring(0, indexOfColon);
             String distance = currentLine.substring((indexOfColon + 1));
 
-            d
+            Float speedFloat = Float.parseFloat(speed);
+            Float distanceFloat = Float.parseFloat(distance);
+
+            Float distanceOverSpeed = (distanceFloat/speedFloat);
 
 
             if (distanceOverSpeed > 1.0){
