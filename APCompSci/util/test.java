@@ -1,7 +1,8 @@
-package Test;
-public class Test {
+package APCompSci.util;
+
+public class test {
     String firstName;
-    public Test(){
+    public test(){
         
     }
     
