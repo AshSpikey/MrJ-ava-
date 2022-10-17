@@ -7,6 +7,11 @@ public class testingWithoutStupid {
         list.add("6.79:5.01");
         list.add("0.00:1.53");
         list.add("113.56:113.56");
+
+            //Enhanced for loops
+            for (String x: list){
+                System.out.println(x);
+            }
             for(int index = 0; index < 5; index++){
             String currentLine = list.get(index);
 
