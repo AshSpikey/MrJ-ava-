@@ -8,7 +8,7 @@ public class testingWithoutStupid {
         list.add("0.00:1.53");
         list.add("113.56:113.56");
 
-            //Enhanced for loops
+            //Enhanced for loops from MrJ
             for (String x: list){
                 System.out.println(x);
             }
