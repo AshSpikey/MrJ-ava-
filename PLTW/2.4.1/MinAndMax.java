@@ -14,32 +14,43 @@ public class MinAndMax
     Scanner sc = new Scanner(System.in);
     
     List <Integer> listOfInts = new ArrayList<Integer>();
+    
     while (true){
     System.out.println("Would you like to add a number? Enter a 0 for no, or a 1 for yes.");
      int inputAnswer = sc.nextInt();
+     int maxVal =0;
+     int minVal=0;
      if (inputAnswer == 0){
       // This is where I will call my code for finding the max and min
       int tempValue = listOfInts.get(0);
-      int maxVal;
-      int minVal;
+      //System.out.println("tempValue is " + tempValue);
+      
       for (int x: listOfInts){
         //Finding Max
-        if (x > tempValue){
+        if (x >= tempValue){
           maxVal = x;
+          
+        }
+
+        if (x <= tempValue){
+          minVal = x;
+          //System.out.println("min val check is " + x);
         }
         
       }
 
-      for (int x: listOfInts){
+      /*for (int y: listOfInts){
         // Finding min value
-        if (x < tempValue){
-          minVal = x;
+        if (y < tempValue){
+          System.out.println("The current tempval is " + tempValue);
+          System.out.println("The y val is " + y);
+          minVal = y;
           
         }
-      }
-
+      }*/
       System.out.println("The max value is " + maxVal + " and the min value is " + minVal + ".");
       break;
+      
      }
 
      else if (inputAnswer == 1){
