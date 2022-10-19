@@ -1,15 +1,18 @@
 public class Student {
     private String favoriteClass;
     private Double happinessLevel;
+    private String name;
     
     public Student(){
         favoriteClass = "";
         happinessLevel = 0.0;
+        name = "";
     }
 
-    public Student(String fav, Double hap){
+    public Student(String fav, Double hap, String nam){
         favoriteClass = fav;
         happinessLevel = hap;
+        name = nam;
     }
 
     public void modifyFavoriteClass(String fav){
@@ -26,5 +29,9 @@ public class Student {
 
     public Double getHappinessLevel(){
         return happinessLevel;
+    }
+
+    public String toString(){
+        return name;
     }
 }
