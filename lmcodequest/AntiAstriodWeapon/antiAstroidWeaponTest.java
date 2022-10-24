@@ -1,9 +1,11 @@
 import java.util.*;
-// BASICALLY ALL I AM NEED TO DO IS CREATE A SORTING METHOD!!! FUN :D
+public class antiAstroidWeaponTest {
+    
+
 
 // I need to think of a way to compare the different items to one another. Perhaps multiple vars? Perhaps a list?
 
-public class antiAstroidWeapon{
+
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
@@ -40,14 +42,19 @@ public class antiAstroidWeapon{
             } // CURRENT AREA OF WORK :: I am a little confused with where I am comparing the values and how I can do it, currently adding too many things which will end up causing more issues, need a fresh mind to look at it and think about it later
 
                 //This area will compare the values in the list to find the one that is the highest, second highest, and then lowest
-                int smallestValue = distanceValues.get(0);
+                
                 //int indexOfFurthestDistance = 0;
-                for(int index = 0; index < numberOfLines; index++){
-                    int comparisonValue = distanceValues.get(index);
+                
+                for(int overallLoop = 0; overallLoop < numberOfLines; overallLoop++){
+                    int smallestValue = distanceValues.get(0);
+                    for(int index = 0; index < numberOfLines; index++){
+                        int comparisonValue = distanceValues.get(index);
 
-                    if(comparisonValue <= smallestValue){
-                        smallestValue = comparisonValue;
+                        if(comparisonValue <= smallestValue){
+                            smallestValue = comparisonValue;
+                        }
                     }
+                    System.out.println
                 }
 
              // Then Inside of the for loop, the values are collected, and distance is calculated and printed out 
@@ -56,3 +63,4 @@ public class antiAstroidWeapon{
 
     }
 }
+

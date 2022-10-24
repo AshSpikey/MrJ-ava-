@@ -18,7 +18,7 @@ public class AnagramCheckerTest  {
         testStrings.add("RUN|FLY");
         testStrings.add("DEDUCTIONS|DISCOUNTED");
         testStrings.add("PATERNAL|PARENTAL");
-        testStrings.add("MIKE|MIKE");
+        testStrings.add("AATTT|AAATT");
         
 
         for (int iterations = 0; iterations < testCases; iterations++){
