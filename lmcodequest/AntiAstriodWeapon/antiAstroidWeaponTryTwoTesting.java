@@ -40,27 +40,32 @@ public class antiAstroidWeaponTryTwoTesting {
                 int currentValueXVal = Integer.parseInt(allValues.get(index).substring(0, indexOfSpaceCurrentVal));
                 int currentValueYVal = Integer.parseInt(allValues.get(index).substring(indexOfSpaceCurrentVal + 1));
                 double currentValueDistance =  Math.sqrt((currentValueXVal * currentValueXVal)+(currentValueYVal * currentValueYVal));
-                
+
+                //System.out.println(currentValueDistance);
+
                 int indexOfSpaceComparisonVal = allValues.get(index + 1).indexOf(" ");
                 int comparisonValueXVal = Integer.parseInt(allValues.get(index + 1).substring(0, indexOfSpaceComparisonVal));
                 int comparisonValueYVal = Integer.parseInt(allValues.get(index + 1).substring(indexOfSpaceComparisonVal + 1));
                 double comparisonValueDistance = Math.sqrt((comparisonValueXVal * comparisonValueXVal) + (comparisonValueYVal * comparisonValueYVal));
 
-                System.out.println("current value distance is " + currentValueDistance + " and comparison value distance is " + comparisonValueDistance);
-                System.out.println(allValues);
+                //System.out.println("current value distance is " + currentValueDistance + " and comparison value distance is " + comparisonValueDistance);
+                //System.out.println(allValues);
 
                 if(currentValueDistance > comparisonValueDistance){
+                    //System.out.println("Index inside of the comparison statement is " + index);
                     String currentFirstVal = allValues.get(index);
+                    //System.out.println(" current first val is " + currentFirstVal);
                     String currentSecondVal = allValues.get(index + 1);
+                    //System.out.println("current second val is " + currentSecondVal);
                     
                     allValues.set(index + 1, currentFirstVal);
                     allValues.set(index, currentSecondVal);
-                    index = 0;
+                    index = -1;
 
                 }
                 
                 
-                System.out.println("Index is currently " + index);
+                //System.out.println("Index is currently " + index);
 
                 index ++;
                 
