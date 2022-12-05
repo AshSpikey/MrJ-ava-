@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.io.File;
 public class Board{
 
-private String loadPhrase()
+public String loadPhrase()
   {
     String tempPhrase = "";
     
